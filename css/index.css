@@ -244,6 +244,7 @@ header .logo:hover {
   width: 60%;
   margin: 2rem auto;
   height: 30vh;
+  line-height: 2rem;
 }
 
 .hero__section {
@@ -276,8 +277,8 @@ header .logo:hover {
   flex: 1;
   background: var(--light-bg);
   text-align: center;
-  min-width: 20rem;
-  min-height: 25rem;
+  width: 20rem;
+  height: 25rem;
   box-shadow: var(--shadow);
   border-radius: 10px;
   color: var(--light-black);
@@ -290,8 +291,7 @@ header .logo:hover {
   margin: 3rem auto;
 }
 
-.card h3,
-.card p {
+.card p{
   text-align: center;
   margin-bottom: 3rem;
   font-size: 1.2rem;
