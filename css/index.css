@@ -44,7 +44,7 @@ html {
 
 body {
   font-family: 'Montserrat-regular', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1rem;
   background-color: var(--white);
   color: var(--light-black);
 }
@@ -71,6 +71,7 @@ a:hover {
 }
 
 .container nav a {
+  font-size: 1rem;
   margin: 1.5rem;
 }
 
@@ -296,7 +297,7 @@ header .logo:hover {
 .card p{
   text-align: center;
   margin-bottom: 3rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .card button,
@@ -369,12 +370,6 @@ footer p {
 }
 .footer__content ul li:hover {
     text-decoration: underline var(--btn-bg);   
-}
-
-@media (width < 1000px ) {
-    .text__section p {
-      font-size: 1.2rem;
-    }
 }
 
 @media (width < 462px ) {
