@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="../index.html"
+          ><img class="logo" src="../assets/img/logo.svg" alt=""
+        /></a>
+        <nav>
+          <a href="../index.html">Inicio</a>
+          <a href="./about.html">Acerca de</a>
+          <a href="#">Contacto</a>
+        </nav>
+        <button class="burger">
+          <div class="bar"></div>
+        </button>
+      </div>
+    </header>
+    <nav class="mobile-nav">
+      <a href="../index.html">Inicio</a>
+      <a href="./about.html">Acerca de</a>
+      <a href="#">Contacto</a>
+    </nav>
+
+    <section class="hero__section-contact">
+      <h1 class="contact__heading">Contáctanos</h1>
+      <img src="../assets/img/girl-6112208_1920.jpg" alt="" />
+    </section>
+
+    <section class="contact__section">
+      <div class="contact__section-cards-container">
+        <article class="contact__section-card">
+          <i class="fa-regular fa-message"></i>
+          <h4>Email</h4>
+          <h5>correo@correo.es</h5>
+          <a href="mailto:davidblanco1993@gmail.es">Enviar mensaje</a>
+        </article>
+        <article class="contact__section-card">
+          <i class="fa-brands fa-linkedin"></i>
+          <h4>Linkedin</h4>
+          <h5>David Menéndez Blanco</h5>
+          <a
+            href="https://www.linkedin.com/in/david-menendez-blanco-056a18252/"
+            target="_blank"
+            >Enviar mensaje</a
+          >
+        </article>
+        <article class="contact__section-card">
+          <i class="fa-brands fa-whatsapp"></i>
+          <h4>Whatsapp</h4>
+          <h5>633633633</h5>
+          <a
+            href="https://api.whatsapp.com/send?phone=+34633440416"
+            target="_blank"
+            >Enviar mensaje</a
+          >
+        </article>
+        <article class="contact__section-card">
+          <i class="fa-brands fa-chrome"></i>
+          <h4>Web</h4>
+          <h5>www.davcode.dev</h5>
+          <a href="https://www.davcode.dev" target="_blank">Visitar Web</a>
+        </article>
+      </div>
+      <div class="success__message-container">
+        <span><i class="fa-solid fa-check"></i></span>
+        <h5>
+          Mensaje enviado correctamente, gracias por ponerte en contacto con nosotros <br>
+          Responderemos a la menor brevedad posible.
+        </h5>
+      </div>
+      <form action="#" id="form">
+        <fieldset>
+          <legend>Formulario de contacto</legend>
+          <label for="name">Nombre Completo</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Nombre completo"
+          />
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Correo electrónico"
+          />
+          <label for="telephone">Teléfono</label>
+          <input
+            type="tel"
+            name="telephone"
+            id="telephone"
+            placeholder="Teléfono"
+          />
+          <label for="message">Mensaje</label>
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Mensaje"
+          ></textarea>
+          <input type="submit" value="Enviar" class="form-btn" id="submit" />
+        </fieldset>
+        <div id="messageList"></div>
+      </form>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 | Todos los derechos reservados</p>
+      <div class="footer__content">
+        <a href="../index.html"
+          ><img class="logo" src="../assets/img/logo.svg" alt=""
+        /></a>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="./about.html">Acerca de</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="footer__content-socials">
+          <a class="social" href="https://www.linkedin.com/in/david-menendez-blanco-056a18252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+          <a class="social" href="https://github.com/DavCode46" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+          <a class="social" href="https://davcode.dev" target="_blank"><i class="fa-brands fa-chrome"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/c3db1c8a5f.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/index.js" type="module"></script>
+  </body>
+</html>
