@@ -221,6 +221,11 @@ body {
      form {
          width: 90%;
          margin: 0 auto;
+         margin-bottom: 2rem;
+     }
+
+     form fieldset .form-btn {
+        margin-top: 1rem;
      }
  }
  
