@@ -2,6 +2,28 @@
 @import './variables.css';
 @import './about.css';
 
+@font-face {
+  font-family: 'Montserrat-italic';
+  src: url('../assets/fonts/Montserrat/Montserrat-Italic.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat-regular';
+  src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Playfair-regular';
+  src: url('../assets/fonts/Playfair/PlayfairDisplay-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Playfair-medium-italic';
+  src: url('../assets/fonts/Playfair/PlayfairDisplay-MediumItalic.ttf');
+}
+
+
+
 
 * {
   margin: 0;
@@ -20,12 +42,20 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+  font-family: 'Montserrat-regular', sans-serif;
+  font-size: 1.3rem;
+  background-color: var(--white);
+  color: var(--light-black);
+}
+
 .social {
   color: var(--btn-bg);
 }
 
 a:not(.social) {
   color: var(--light-black);
+  font-family: 'Montserrat-italic', sans-serif;
 }
 
 a:hover {
@@ -279,6 +309,7 @@ header .logo:hover {
   transition: var(--transition);
   margin-bottom: 3rem;
   z-index: 2;
+  font-family: 'Playfair-regular', sans-serif;
 }
 
 .card button:hover,

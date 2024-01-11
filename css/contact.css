@@ -1,4 +1,8 @@
 
+@font-face {
+    font-family: 'Playfair-semibold';
+    src: url('../assets/fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf');
+  }
 
 body {
     font-size: 1.3rem;
@@ -16,6 +20,7 @@ body {
      width: 50%;
      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
      border-radius: 5px;
+     font-family: 'Playfair-regular', serif;
  }
  
  
@@ -28,11 +33,13 @@ body {
  form fieldset legend {
      font-size: 2rem;
      margin: 2rem auto;
+     font-family: 'Playfair-medium-italic', serif;
  }
  
  form fieldset label {
      font-size: 1.2rem;
      margin-left: 2.8rem;
+     font-family: 'Playfair-medium-italic', serif;
  }
  
  form fieldset input:not(.form-btn),
@@ -98,7 +105,7 @@ body {
  }
  
  .success__message-container {
-    display: none;
+    display: block;
     border: 1px solid var(--btn-bg);
     border-radius: 5px;
     background: var(--white);
@@ -113,15 +120,23 @@ body {
     justify-content: center;
     align-items: center;
     margin: 2rem;
+    font-family: 'Playfair-semibold', serif;
  }
 
  .success__message-container > div p {
-    font-size: 1.2rem;
+    font-size: 1.2rem;  
  }
 
  .success__message-container > div span i {
     margin: 1rem;
+    position: relative;
     color: green;
+    font-size: 1.7rem;  
+    border: 1px solid green;
+    border-bottom: transparent;
+    border-top: transparent;
+    border-radius: 50%;
+    padding: .5rem;
  }
 
  .close-btn {
