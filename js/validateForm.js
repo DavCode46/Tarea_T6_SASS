@@ -5,6 +5,13 @@ const email = document.getElementById("email");
 const phone = document.getElementById("telephone");
 const message = document.getElementById("message");
 const messageList = document.getElementById("messageList");
+const successMessage = document.querySelector(".success__message-container");
+
+
+export const closeSuccessContainer = () => {
+  successMessage.style.display = "none";
+  form.style.display = "block";
+};
 
 const onChange = (item, error) => {
   const input = document.getElementById(item);
@@ -64,14 +71,11 @@ export const validate = (e) => {
     messageList.style.color = "red";
     messageList.innerHTML = errorsArray.join("<br>");
   } else {
-    messageList.style.color = "green";
-    messageList.innerHTML =
-      "Mensaje enviado, gracias por contactar con nosotros";
-
+    form.style.display = "none";
+    successMessage.style.display = "block";
     setTimeout(() => {
       form.reset();
       messageList.innerHTML = "";
     }, 3000);
-    form.submit();
   }
 };
