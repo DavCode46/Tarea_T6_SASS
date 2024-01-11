@@ -91,39 +91,44 @@
 
 @media (max-width: 1030px) {
     .about__section {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
-        overflow-y: auto;
-        grid-auto-flow: column;
+        display: flex;
+        flex-direction: column;
     }
 
+    .frame__container {
+        order: 1;
+    }
 
     .about__image-computer {
         width: 90%;  
-        grid-column: 1 / 3;
-        grid-row: 1;
+        align-self: center;
+        justify-self: center;
     }
 
     .about__section p:first-of-type {
-        grid-column: 1 / 3;
-        grid-row: 2;
         width: 90%;
+        order: 2;
     }
 
     .about__section p:nth-of-type(2) {
-        grid-row: 3;
-        grid-column: 1 / 3;
         width: 100%;
+        order: 4;
+    }
+
+    .square__container {
+        width: 70%;
+        height: auto;
+        margin: 3rem;
+        order: 3;
+    }
+
+    .square__container::after {
+        width: 70%;
     }
 
     .about__image-enterpreneur {
-        grid-column: 2;
-        grid-row: 3;
-        width: 60%;
-        height: auto;
-        float: left;
-        margin: 1rem;
-        
+        margin: 1rem;  
+        width: 60%;  
     }
    
 
@@ -131,38 +136,32 @@
   }
 
 @media (width < 500px) {
-    .about__section {
-        overflow-y: auto;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto;
-        place-content: center;
-        
+    .square__container {
+        width: 100%;
     }
 
-    .about__image-enterpreneur,
-    .about__image-computer {
-        width: 20rem;
-        height: auto;
-        margin-left: 1.5rem;  
+    .square__container::after {
+        width: 90%;
     }
 
     .about__image-computer {
-        grid-row: 1;
-    }
-    .about__section p:first-of-type {
-        grid-row: 2;
-    }
-    .about__section p:last-of-type {
-        grid-row: 4;
-    }
-    .about__section p:first-of-type,
-    .about__section p:last-of-type {
-        width: 95%;
-        text-align: center;
-        justify-self: center;
+        transform: translate(-2rem, -2rem);
+        width: 100%;
     }
 
     .about__image-enterpreneur {
-        grid-row: 3;
+        width: 90%;
     }
+
+    .frame__container {
+        width: 120%;
+    }
+
+    .about__section p:first-of-type,
+    .about__section p:last-of-type {
+        width: 100%;
+        font-size: .7rem;
+        text-align: center;
+    }
+   
 }
