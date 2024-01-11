@@ -267,7 +267,8 @@ header .logo:hover {
   font-size: 1.2rem;
 }
 
-.card button {
+.card button,
+.close-btn {
   position: relative;
   background-color: var(--btn-bg);
   border: none;
@@ -280,7 +281,8 @@ header .logo:hover {
   z-index: 2;
 }
 
-.card button:hover {
+.card button:hover,
+.close-btn:hover {
     background-color: var(--btn-hover);
     transform: scale(1.1);
     

@@ -98,9 +98,39 @@ body {
  }
  
  .success__message-container {
-     display: none;
+    display: none;
+    border: 1px solid var(--btn-bg);
+    border-radius: 5px;
+    background: var(--white);
+    width: fit-content;
+    padding: 2rem;
+    margin: 0 auto;
+    position: relative;
  }
- 
+
+ .success__message-container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+ }
+
+ .success__message-container > div p {
+    font-size: 1.2rem;
+ }
+
+ .success__message-container > div span i {
+    margin: 1rem;
+    color: green;
+ }
+
+ .close-btn {
+    width: 5rem;
+    height: auto;
+    font-size: 1.1rem;
+    margin-left: 3rem;
+ }
+
  .success__message-container h5 {
      color: green;
  }

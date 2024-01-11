@@ -69,22 +69,23 @@
           <a href="https://www.davcode.dev" target="_blank">Visitar Web</a>
         </article>
       </div>
-      <div class="success__message-container">
-        <span><i class="fa-solid fa-check"></i></span>
-        <h5>
-          Mensaje enviado correctamente, gracias por ponerte en contacto con nosotros <br>
-          Responderemos a la menor brevedad posible.
-        </h5>
-      </div>
+      
       <form action="#" id="form">
         <fieldset>
           <legend>Formulario de contacto</legend>
-          <label for="name">Nombre Completo</label>
+          <label for="name">Nombre</label>
           <input
             type="text"
             name="name"
             id="name"
-            placeholder="Nombre completo"
+            placeholder="Nombre"
+          />
+          <label for="name">Apellidos</label>
+          <input
+            type="text"
+            name="surname"
+            id="surname"
+            placeholder="Apellidos"
           />
           <label for="email">Correo electrónico</label>
           <input
@@ -112,6 +113,18 @@
         </fieldset>
         <div id="messageList"></div>
       </form>
+      <div class="success__message-container">
+        <div>
+          <span><i class="fa-solid fa-check"></i></span>
+          <h5>
+            Mensaje enviado correctamente, gracias por ponerte en contacto con nosotros <br>
+            Responderemos a la menor brevedad posible.
+          </h5> 
+
+        </div>
+        <button class="close-btn">Cerrar</button>
+        
+      </div>
     </section>
 
     <footer>
