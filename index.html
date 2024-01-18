@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
@@ -54,54 +54,88 @@
 
     <section class="card__section">
       <article class="card">
-        <img src="assets/img/camino.png" alt="Imagen sendero" />
-        <p>Explora senderos inexplorados.</p>
+        <div class="card__image-container">
+          <img src="assets/img/card1.jpg" alt="Imagen " />
+        </div>
+        <div class="paragraph__container">
+          <p>
+            Sumérgete en la maravilla de un bosque entre montañas y lagos, donde
+            la diversidad de fauna revela un espectáculo único. Nuestra empresa
+            se especializa en rutas diseñadas para la observación de la vida
+            silvestre en un entorno natural extraordinario. Acompañados por
+            guías expertos, podrás descubrir la variedad de especies que llaman
+            a este bosque su hogar.
+          </p>
+        </div>
         <button>Más información</button>
       </article>
       <article class="card">
-        <img src="assets/img/naturaleza.png" alt="" />
-        <p>Descubre la esencia de la naturaleza.</p>
-        <button>Más información</button>
-      </article>
-      <article class="card">
-        <img src="assets/img/montana.png" alt="" />
-        <p>Aventuras entre montañas</p>
-        <button>Más información</button>
-      </article>
-      <article class="card">
-        <img src="assets/img/hoja.png" alt="" />
-        <p>Conéctate con la naturaleza..</p>
-        <button>Más información</button>
-      </article>
-      <article class="card">
-        <img src="assets/img/planta.png" alt="" />
-        <p>Productos naturales, calidad auténtica.</p>
-        <button>Más información</button>
-      </article>
-      <article class="card">
-        <img src="assets/img/colina.png" alt="" />
-        <p>Senderos que inspiran..</p>
+        <div class="card__image-container">
+          <img src="assets/img/card2.jpg" alt="" />
+        </div>
+        <div class="paragraph__container">
+          <p>
+            Explora con nosotros la majestuosidad de las rutas por lagos y
+            montañas, donde cada paso revela paisajes asombrosos y momentos
+            inolvidables. Nuestra empresa está comprometida a brindarte
+            experiencias excepcionales en entornos naturales.
+          </p>
+        </div>
         <button>Más información</button>
       </article>
     </section>
 
     <footer>
-      <p>&copy; 2024 | Todos los derechos reservados</p>
+      <a href="#"><img class="logo" src="assets/img/logo.svg" alt="" /></a>
       <div class="footer__content">
-        <a href="#"><img class="logo" src="assets/img/logo.svg" alt="" /></a>
-        <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="templates/about.html">Acerca de</a></li>
-          <li><a href="templates/contact.html">Contacto</a></li>
-        </ul>
-        <div class="footer__content-socials">
-          <a class="social" href="https://www.linkedin.com/in/david-menendez-blanco-056a18252/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a class="social" href="https://github.com/DavCode46" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-          <a class="social" href="https://davcode.dev" target="_blank"><i class="fa-brands fa-chrome"></i></a>
+        <div class="footer__content-item">
+          <h4>Servicios</h4>
+          <ul>
+            <li><a href="#">Rutas</a></li>
+            <li><a href="#">Aventuras</a></li>
+            <li><a href="#">Deportes de riesgo</a></li>
+          </ul>
+        </div>
+        <div class="footer__content-item">
+          <h4>Sobre nosotros</h4>
+
+          <ul>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Misión</a></li>
+            <li><a href="#">Visión</a></li>
+          </ul>
+        </div>
+        <div class="footer__content-item">
+          <h4>Nuestra empresa</h4>
+          <p>
+            Nuestra empresa, dedicada a la conexión con la naturaleza, se
+            esfuerza por ofrecer experiencias únicas en paseos por montañas y
+            entornos naturales. Nos enorgullece guiar a nuestros clientes a
+            través de senderos serenos, explorando la belleza virgen de la
+            naturaleza.
+          </p>
         </div>
       </div>
+      <div class="footer__content-socials">
+        <a
+          class="social"
+          href="https://www.linkedin.com/in/david-menendez-blanco-056a18252/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a class="social" href="https://github.com/DavCode46" target="_blank"
+          ><i class="fa-brands fa-square-github"></i
+        ></a>
+        <a class="social" href="https://davcode.dev" target="_blank"
+          ><i class="fa-brands fa-chrome"></i
+        ></a>
+      </div>
+      <p>&copy; 2024 | Todos los derechos reservados</p>
     </footer>
-    <script src="https://kit.fontawesome.com/c3db1c8a5f.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/c3db1c8a5f.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="../js/index.js" type="module"></script>
   </body>
 </html>
