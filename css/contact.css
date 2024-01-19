@@ -306,6 +306,22 @@ body {
      form fieldset textarea {
         height: 7rem;
      }
+
+     .success__message-container {
+        width: 90%;
+        padding: 1rem;
+        margin: 2rem auto;
+        font-size: .9rem;
+     }
+
+     .success__message-container > div {
+        width: 90%;
+        margin-left: 1rem;
+     }
+
+     .success__message-container button {
+        width: 80%;
+     }
  }
  
  
