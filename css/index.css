@@ -416,6 +416,27 @@ form div {
     width: 80%;
   }
 }
+.slider {
+  width: 50%;
+  height: auto;
+  margin: 5rem auto 0;
+  overflow: hidden;
+}
+
+.slider-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100%;
+  transition: all 1s ease-in-out;
+  width: 100%;
+}
+.slider-inner img {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 @font-face {
   font-family: "Montserrat-italic";
   src: url("../assets/fonts/Montserrat/Montserrat-Italic.ttf");
