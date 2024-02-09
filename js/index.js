@@ -1,4 +1,4 @@
-import { validate, closeSuccessContainer} from "./validateForm.js";
+import { validate, closeSuccessContainer } from "./validateForm.js";
 import { burgerMenu } from "./burger.js";
 import { slider } from "./slider.js";
 
@@ -9,11 +9,14 @@ document.addEventListener("DOMContentLoaded", () => {
   if (form) {
     form.addEventListener("submit", validate);
   }
-  if(closeBtn) {
+  if (closeBtn) {
     closeBtn.addEventListener("click", () => {
       setTimeout(closeSuccessContainer, 300);
     });
   }
   burgerMenu();
-  slider();
+
+  if (document.getElementById("slider-inner")) {
+    slider();
+  }
 });

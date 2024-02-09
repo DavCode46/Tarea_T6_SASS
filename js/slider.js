@@ -1,10 +1,10 @@
-let sliderInner = document.getElementById("slider-inner");
-let images = sliderInner.querySelectorAll("img");
-
-let index = 1;
-let direction = 1;
 
 export const slider = () => {
+    let sliderInner = document.getElementById("slider-inner");
+    let images = sliderInner.querySelectorAll("img");
+    
+    let index = 1;
+    let direction = 1;
   setInterval(() => {
     let percentage = index * -100;
 

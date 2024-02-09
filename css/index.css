@@ -416,6 +416,12 @@ form div {
     width: 80%;
   }
 }
+section:has(.slider) {
+  background: #e3e6fc;
+  margin-top: -5rem;
+  margin-bottom: -10rem;
+}
+
 .slider {
   width: 50%;
   height: auto;
@@ -437,6 +443,19 @@ form div {
   height: 100%;
 }
 
+@media (width < 500px) {
+  .slider {
+    width: 90%;
+  }
+}
+@media (width < 1030px) {
+  .slider {
+    width: 80%;
+  }
+  section:has(.slider) {
+    margin-bottom: -40rem;
+  }
+}
 @font-face {
   font-family: "Montserrat-italic";
   src: url("../assets/fonts/Montserrat/Montserrat-Italic.ttf");
@@ -583,7 +602,8 @@ a:hover {
     display: none;
   }
 }
-section:not(.text__section):not(.hero__section-contact) {
+section:not(.text__section):not(.hero__section-contact),
+section:not(:has(.slider)) {
   min-height: 100vh;
 }
 

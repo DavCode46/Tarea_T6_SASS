@@ -172,7 +172,8 @@ a {
   }
 }
 
-section:not(.text__section):not(.hero__section-contact) {
+section:not(.text__section):not(.hero__section-contact),
+section:not(:has(.slider)) {
   min-height: 100vh;
 }
 
