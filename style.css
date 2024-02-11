@@ -1,6 +1,7 @@
-img, button, ion-icon {
-  display: block;
-}
+
+img,
+button,
+ion-icon { display: block; }
 
 img {
   height: auto;
@@ -20,13 +21,9 @@ body {
   overflow-y: overlay;
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-}
+::-webkit-scrollbar { width: 6px; }
 
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
+::-webkit-scrollbar-track { background-color: transparent; }
 
 ::-webkit-scrollbar-thumb {
   background-color: transparent;
@@ -34,7 +31,7 @@ body {
 }
 
 body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
-  background-color: $background;
+  background-color: var(--background);
 }
 
 .slider-section {
@@ -46,9 +43,7 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
 }
 
 .slider {
-  --slider-items:1;
-
-  /* mandatory para slider */
+  --slider-items: 1; /* mandatory para slider */
 
   position: relative;
   width: 100%;
@@ -56,31 +51,29 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
   overflow-x: hidden;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
 
-  &::before, &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 24px;
-    height: 100%;
-    z-index: 1;
-    background-image: linear-gradient(to var(--gr-direction, right), #e3e6fc 0%, transparent 100%);
-  }
+.slider::before,
+.slider::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 24px;
+  height: 100%;
+  z-index: 1;
+  background-image: linear-gradient(to var(--gr-direction, right),
+                      var(--background) 0%, transparent 100%);
+}
 
-  &::before {
-    left: 0;
-  }
+.slider::before { left: 0; }
 
-  &::after {
-    right: 0;
-    --gr-direction:left;
-  }
+.slider::after {
+  right: 0;
+  --gr-direction: left;
 }
 
 .slider-container {
-  position: relative;
-
-  /* mandatory para slider */
+  position: relative; /* mandatory para slider */
   display: flex;
   justify-content: flex-start;
   transition: transform 250ms ease;
@@ -93,14 +86,12 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
 }
 
 .slider-card {
-  background-color: $surface-variant;
-  border-radius: $radius-12;
+  background-color: var(--surface-variant);
+  border-radius: var(--radius-12);
   overflow: hidden;
 }
 
-.img-holder {
-  aspect-ratio: var(--width) / var(--height);
-}
+.img-holder { aspect-ratio: var(--width) / var(--height); }
 
 .img-cover {
   width: 100%;
@@ -111,12 +102,12 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
 .btn-icon {
   width: 40px;
   height: 40px;
-  background-color: $secondary-container;
-  color: $on-secondary-container;
+  background-color: var(--secondary-container);
+  color:var(--on-secondary-container);
   font-size: 2.4rem;
   display: grid;
   place-items: center;
-  border-radius: $radius-full;
+  border-radius: var(--radius-full);
   box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5);
 }
 
@@ -125,68 +116,60 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
   top: 50%;
   transform: translateY(-50%);
   z-index: 2;
-
-  &.prev {
-    left: 0;
-  }
-
-  &.next {
-    right: 0;
-  }
-
-  &:disabled {
-    display: none;
-  }
 }
 
+.slider-control.prev { left: 0; }
+
+.slider-control.next { right: 0; }
+
+.slider-control:disabled { display: none; }
+
+
+
 @media (min-width: 567px) {
+
   .container {
     max-width: 480px;
     width: 100%;
     margin-inline: auto;
   }
 
-  .card-slider {
-    --slider-items:2;
-  }
+  .card-slider { --slider-items: 2; }
+
 }
+
 
 @media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
 
-  .card-slider {
-    --slider-items:3;
-  }
+  .container { max-width: 720px; }
+
+  .card-slider { --slider-items: 3; }
+
 }
+
 
 @media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
 
-  .card-slider {
-    --slider-items:4;
-  }
+  .container { max-width: 960px; }
+
+  .card-slider { --slider-items: 4; }
+
 }
+
 
 @media (min-width: 1200px) {
-  .container {
-    max-width: 1150px;
-  }
 
-  .banner-slider {
-    --slider-items:2;
-  }
+  .container { max-width: 1150px; }
 
-  .card-slider {
-    --slider-items:5;
-  }
+  .banner-slider { --slider-items: 2; }
+
+  .card-slider { --slider-items: 5; }
+
 }
 
+
 @media (min-width: 1400px) {
-  .container {
-    max-width: 1400px;
-  }
+
+  .container { max-width: 1400px; }
+
 }

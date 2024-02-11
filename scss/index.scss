@@ -275,7 +275,7 @@ footer .logo:hover {
     margin-left: 1rem;
   }
 
-  img {
+  img:not(.slider-card:has(img)) {
     height: 7rem;
     margin: 3rem auto;
     text-align: center;
