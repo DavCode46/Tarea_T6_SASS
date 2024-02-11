@@ -1,0 +1,101 @@
+Botón modo oscuro/claro
+
+.switch-container{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    margin-top: 5rem;
+}
+
+.switch{
+    all: initial;
+    background: blue;
+    border-radius: 1000px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    font-size: 1rem;
+    
+}
+
+
+.switch:hover{
+    background: blue;
+}
+
+body.dark .switch:hover{
+    background: orange;
+}
+
+
+.switch::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    background: #f1f1f1;
+    top: 0;
+    left: 0;
+    right: unset;
+    border-radius: 100px;
+    transition: .3s ease all;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, .2);
+}
+
+.switch.active{
+    background-color: orange;
+    color: #000;
+
+}
+
+.switch.active::after{
+    right: 0;
+    left: unset;
+}
+
+.switch span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    background: none;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}  
+
+body.dark,
+body.dark .hero__section::before,
+body.dark .card__section::before,
+body.dark footer {
+    background-color: hsl(210, 7%, 11%);
+}
+
+body.dark nav a,
+body.dark .text__section p,
+body.dark footer p,
+body.dark .footer__content-item,
+body.dark .footer__content-item a {
+    color: #e3e6fc;
+}
+
+body.dark .footer__content-socials a {
+    color: hsl(219, 70%, 91%);
+}
+
+body.dark .hero__section {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+
+

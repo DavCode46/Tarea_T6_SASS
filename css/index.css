@@ -417,7 +417,7 @@ form div {
     width: 80%;
   }
 }
-img, button, ion-icon {
+img:not(.card__image-container > img), .btn-icon, ion-icon {
   display: block;
 }
 
@@ -426,7 +426,7 @@ img {
   user-select: none;
 }
 
-button {
+.btn-icon {
   background: none;
   border: none;
   font: inherit;

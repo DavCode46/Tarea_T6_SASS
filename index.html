@@ -6,13 +6,23 @@
     <title>Document</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="scss/dark.css" />
   </head>
   <body>
     <header>
       <div class="container">
-        <a href="../index.html"
-          ><img class="logo" src="../assets/img/logo.svg" alt=""
-        /></a>
+        <a href="#"
+          ><img class="logo" src="assets/img/logo.svg" alt=""
+        data-logo-light/></a>
+        <a href="#"
+          ><img class="logo" src="assets/img/white_logo_transparent_background.png" alt=""
+        data-logo-dark"/></a>
+        <div class="switch-container">
+          <button class="switch" id="switch">
+            <span><i class="fa-solid fa-sun"></i></span>
+            <span><i class="fa-solid fa-moon"></i></span>
+          </button>
+        </div>
         <nav>
           <a href="#">Inicio</a>
           <a href="templates/about.html">Acerca de</a>
@@ -24,17 +34,17 @@
         </button>
       </div>
     </header>
-    
+
     <nav class="mobile-nav">
       <a href="#">Inicio</a>
       <a href="templates/about.html">Acerca de</a>
       <a href="templates/gallery.html">Galería</a>
       <a href="templates/contact.html">Contacto</a>
     </nav>
-
+    
     <section class="hero__section">
       <video autoplay loop muted playsinline class="video-background">
-        <source src="../assets/video/video.mp4" type="video/mp4">
+        <source src="../assets/video/video.mp4" type="video/mp4" />
         Su navegador no soporta el formato del vídeo.
       </video>
       <div class="hero__section-content">
@@ -45,7 +55,7 @@
             <i class="fa-solid fa-arrow-down"></i>
           </a>
         </div>
-        
+
         <p>
           Nuestro compromiso con la innovación y la excelencia nos impulsa a
           alcanzar nuevos horizontes cada día. En el corazón de nuestra misión
@@ -66,8 +76,6 @@
         mañana, desafiando lo ordinario y abriendo paso a nuevas posibilidades
       </p>
     </section>
-
-   
 
     <section class="card__section">
       <article class="card">
