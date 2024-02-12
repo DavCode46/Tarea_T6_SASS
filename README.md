@@ -1,4 +1,4 @@
-# Proyecto realizado con HTML, CSS y JS
+# Proyecto realizado con HTML, SCSS y JS
 ## Tema 6 2º DAW
 
 **Autor:** David Menéndez Blanco
