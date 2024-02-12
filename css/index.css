@@ -955,6 +955,12 @@ a:hover {
     width: 70%;
     margin-left: 10%;
   }
+  footer h4 {
+    font-size: 0.8rem;
+  }
+  footer p {
+    font-size: 0.6rem;
+  }
 }
 section:not(.text__section):not(.hero__section-contact) {
   min-height: 100vh;
