@@ -161,3 +161,13 @@
     }
   }
 }
+
+@media (width <= 280px) {
+  .about__section p {
+    &:first-of-type, &:last-of-type {
+      font-size: .6rem;
+      width: 100%;
+      text-align: left;
+    }
+  }
+} 

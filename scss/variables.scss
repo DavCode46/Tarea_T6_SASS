@@ -8,7 +8,6 @@ $light-black: rgba(0, 0, 0, 0.8);
 $light-white: rgba(255, 255, 255, .8);
 $transition: all 0.3s ease;
 
-/* Slider custom properties */
 
 $background: hsl(210, 7%, 11%);
 $surface-variant: hsl(218, 8%, 28%);
@@ -17,4 +16,12 @@ $on-secondary-container: hsl(219, 70%, 91%);
 
 $radius-full: 50%;
 $radius-12: 12px;
+
+$darkGrey:rgb(34, 34, 34);
+$lightGrey:#bcbcbc;
+$lightGreyHover:#acabab;
+$black:#1f1e1e;
+$white:#fefefe;
+$darkShadow:2px 2px 10px rgba(170, 170, 170, 0.16);
+$lightShadow:10px 10px 20px rgba(0, 0, 0, 0.16);
 

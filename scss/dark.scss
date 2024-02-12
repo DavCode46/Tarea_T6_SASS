@@ -1,0 +1,220 @@
+
+  
+  .switch-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 3rem;
+    margin-top: 5rem;
+  }
+  
+  .switch {
+    all: initial;
+    background: $btn-bg;
+    border-radius: 1000px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    outline: none;
+    font-size: 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 3.5rem;
+  
+    &:hover {
+      background: $btn-hover;
+    }
+  }
+  
+  body.dark .switch:hover {
+    background: orange;
+  }
+  
+  .switch {
+    &::after {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      position: absolute;
+      background: #f1f1f1;
+      top: 0;
+      left: 0;
+      right: unset;
+      border-radius: 100px;
+      transition: .3s ease all;
+      box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+  
+    &.active {
+      background-color: orange;
+      color: #000;
+  
+      &::after {
+        right: 0;
+        left: unset;
+      }
+    }
+  
+    span {
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      display: flex;
+      background: none;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  body.dark {
+    background-color: hsl(210, 7%, 11%);
+
+    .hero__section::before {
+      background-color: hsl(210, 7%, 11%);
+    }
+
+    .about__section {
+      background-color: hsl(210, 7%, 11%);
+      color: #e3e6fc;
+
+      .square__container::after {
+        background: linear-gradient(45deg, transparent, $surface-variant);
+      
+      }
+
+      .frame__container::after {
+        border-color: $surface-variant;
+      }
+    }
+  
+    .card__section {
+      &::before {
+        background-color: hsl(210, 7%, 11%);
+      }
+
+  
+      background-color: hsl(210, 7%, 11%);
+
+      .card {
+        background-color: hsl(210, 7%, 11%);
+        border-color: #e3e6fc;
+        color: #e3e6fc;
+
+        &:hover {
+            background: transparent;
+        }
+      }
+    }
+
+    nav.mobile-nav{
+        background-color: hsl(210, 7%, 11%);
+
+        &.is-active {
+            background-color: hsl(210, 7%, 11%);
+        }
+    }
+
+    .contact__section {
+        background-color: hsl(210, 7%, 11%);
+
+        .contact__section-card {
+            background-color: hsl(210, 7%, 11%);
+            border-color: #e3e6fc;
+
+            &:hover {
+                color: #e3e6fc;
+            }
+
+            a {
+                color: #e3e6fc;
+
+                &:hover {
+                    color: #fff;
+                    text-decoration: underline solid #e3e6fc;
+                }
+            }
+        }
+
+        form {
+            box-shadow: $darkShadow;
+        }
+
+        input:not(input[type='submit']),
+        textarea {
+            background-color: $surface-variant;
+
+            &::placeholder {
+                color: $on-secondary-container;
+            }
+
+            &:focus {
+                box-shadow: $darkShadow;
+            }
+        }
+
+      
+
+        label,
+        legend {
+            color: $on-secondary-container;
+        }
+
+    }
+
+    .slider-section {
+        background-color: $background;
+
+        .slider::before,
+        .slider::after {
+            background-image: linear-gradient(to var(--gr-direction, right), $background 0%, transparent 100%);
+        }
+    }
+  
+    footer {
+      background-color: hsl(210, 7%, 11%);
+    }
+  
+    nav a, .text__section p, footer p {
+      color: #e3e6fc;
+    }
+  
+    .footer__content-item {
+      color: #e3e6fc;
+  
+      a {
+        color: #e3e6fc;
+      }
+    }
+  
+    .footer__content-socials a {
+      color: hsl(219, 70%, 91%);
+    }
+  
+    .hero__section {
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+    }
+  
+    div.bar {
+      background-color: #e3e6fc;
+    }
+  
+    .burger {
+      &::before, &::after {
+        background-color: #e3e6fc;
+      }
+    }
+  }
+
+  .logo-dark:not(footer .logo) {
+    margin-left: -9rem;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  

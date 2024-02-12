@@ -10,9 +10,16 @@
   <body>
     <header>
       <div class="container">
-        <a href="../index.html"
-          ><img class="logo" src="../assets/img/logo.svg" alt=""
-        /></a>
+        <a href="../index.html">
+          <img class="logo" src="../assets/img/logo.svg" alt="" data-logo="light"/>
+          <img class="logo" src="../assets/img/white_logo_transparent_background.png" alt="" data-logo="dark"/>   
+        </a>
+      <div class="switch-container">
+        <button class="switch" id="switch">
+          <span><i class="fa-solid fa-sun"></i></span>
+          <span><i class="fa-solid fa-moon"></i></span>
+        </button>
+      </div>
         <nav>
           <a href="../index.html">Inicio</a>
           <a href="#">Acerca de</a>
@@ -83,7 +90,10 @@
     
 
     <footer>
-      <a href="#"><img class="logo" src="../assets/img/logo.svg" alt="" /></a>
+      <a href="../index.html">
+        <img class="logo" src="../assets/img/logo.svg" alt="" data-logo="light"/>
+        <img class="logo" src="../assets/img/white_logo_transparent_background.png" alt="" data-logo="dark"/>   
+      </a>
       <div class="footer__content">
         <div class="footer__content-item">
           <h4>Servicios</h4>

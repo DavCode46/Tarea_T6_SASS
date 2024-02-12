@@ -2,6 +2,7 @@
 @import "./about.scss";
 @import "./contact.scss";
 @import "./slider.scss";
+@import "./dark.scss";
 
 @font-face {
   font-family: "Montserrat-italic";
@@ -159,17 +160,59 @@ a {
     }
   }
 }
-
-@media (width > 768px) {
+@media (width = 820px) {
+  .switch {
+    right: 5rem;
+  }
+}
+@media (width = 1024px) {
+  .switch {
+    right: 6rem;
+  }
+}
+@media (width > 912px) {
   .mobile-nav, .burger {
     display: none;
   }
 }
 
-@media (width <= 768px) {
+@media (width <= 912px) {
   .container nav {
     display: none;
   }
+
+  header .logo {
+    margin-bottom: -1.2rem;
+  }
+}
+@media (width <= 540px) {
+  .switch {
+    font-size: 0.8rem;
+    right: 2.7rem;
+
+    & span {
+      width: 20px;
+      height: 20px;
+    }
+
+    &::after {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+@media (width <= 280px) {
+  .burger {
+    width: 25px;
+  }
+
+  article.card {
+    width: 70%;
+    margin-left: 10%;
+  }
+
+  
 }
 
 section:not(.text__section):not(.hero__section-contact) {

@@ -1,4 +1,3 @@
-/* Slider custom properties */
 .about__section {
   padding: 5rem;
   background: #e3e6fc;
@@ -139,6 +138,13 @@
     text-align: center;
   }
 }
+@media (width <= 280px) {
+  .about__section p:first-of-type, .about__section p:last-of-type {
+    font-size: 0.6rem;
+    width: 100%;
+    text-align: left;
+  }
+}
 @font-face {
   font-family: "Playfair-semibold";
   src: url("../assets/fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf");
@@ -215,7 +221,7 @@ form fieldset .form-btn {
   padding: 0.8rem;
   background: #5b43b3;
   border-radius: 8px;
-  color: #fff;
+  color: #fefefe;
   width: 30%;
   margin-left: 2.8rem;
   cursor: pointer;
@@ -235,7 +241,7 @@ form div {
   display: none;
   border: 1px solid #5b43b3;
   border-radius: 5px;
-  background: #fff;
+  background: #fefefe;
   width: fit-content;
   padding: 2rem;
   margin: 0 auto;
@@ -288,7 +294,7 @@ form div {
   min-width: 15rem;
   min-height: 10rem;
   border-radius: 10px;
-  color: #fff;
+  color: #fefefe;
   transition: all 0.3s ease;
   line-height: 1.75;
 }
@@ -306,7 +312,7 @@ form div {
 }
 .contact__section-cards-container article a {
   text-decoration: none;
-  color: #fff;
+  color: #fefefe;
   transition: all 0.3s ease;
   font-size: 0.8rem;
 }
@@ -330,7 +336,7 @@ form div {
 }
 .hero__section-contact h1 {
   position: absolute;
-  color: #fff;
+  color: #fefefe;
   font-size: 2rem;
   top: 50%;
   left: calc(50% - 128.01px);
@@ -591,6 +597,183 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
     max-width: 1400px;
   }
 }
+.switch-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+  margin-top: 5rem;
+}
+
+.switch {
+  all: initial;
+  background: #5b43b3;
+  border-radius: 1000px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+  font-size: 1rem;
+  position: absolute;
+  top: 2rem;
+  right: 3.5rem;
+}
+.switch:hover {
+  background: #7761c5;
+}
+
+body.dark .switch:hover {
+  background: orange;
+}
+
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background-color: orange;
+  color: #000;
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: flex;
+  background: none;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+body.dark {
+  background-color: hsl(210, 7%, 11%);
+}
+body.dark .hero__section::before {
+  background-color: hsl(210, 7%, 11%);
+}
+body.dark .about__section {
+  background-color: hsl(210, 7%, 11%);
+  color: #e3e6fc;
+}
+body.dark .about__section .square__container::after {
+  background: linear-gradient(45deg, transparent, hsl(218, 8%, 28%));
+}
+body.dark .about__section .frame__container::after {
+  border-color: hsl(218, 8%, 28%);
+}
+body.dark .card__section {
+  background-color: hsl(210, 7%, 11%);
+}
+body.dark .card__section::before {
+  background-color: hsl(210, 7%, 11%);
+}
+body.dark .card__section .card {
+  background-color: hsl(210, 7%, 11%);
+  border-color: #e3e6fc;
+  color: #e3e6fc;
+}
+body.dark .card__section .card:hover {
+  background: transparent;
+}
+body.dark nav.mobile-nav {
+  background-color: hsl(210, 7%, 11%);
+}
+body.dark nav.mobile-nav.is-active {
+  background-color: hsl(210, 7%, 11%);
+}
+body.dark .contact__section {
+  background-color: hsl(210, 7%, 11%);
+}
+body.dark .contact__section .contact__section-card {
+  background-color: hsl(210, 7%, 11%);
+  border-color: #e3e6fc;
+}
+body.dark .contact__section .contact__section-card:hover {
+  color: #e3e6fc;
+}
+body.dark .contact__section .contact__section-card a {
+  color: #e3e6fc;
+}
+body.dark .contact__section .contact__section-card a:hover {
+  color: #fff;
+  text-decoration: underline solid #e3e6fc;
+}
+body.dark .contact__section form {
+  box-shadow: 2px 2px 10px rgba(170, 170, 170, 0.16);
+}
+body.dark .contact__section input:not(input[type=submit]),
+body.dark .contact__section textarea {
+  background-color: hsl(218, 8%, 28%);
+}
+body.dark .contact__section input:not(input[type=submit])::placeholder,
+body.dark .contact__section textarea::placeholder {
+  color: hsl(219, 70%, 91%);
+}
+body.dark .contact__section input:not(input[type=submit]):focus,
+body.dark .contact__section textarea:focus {
+  box-shadow: 2px 2px 10px rgba(170, 170, 170, 0.16);
+}
+body.dark .contact__section label,
+body.dark .contact__section legend {
+  color: hsl(219, 70%, 91%);
+}
+body.dark .slider-section {
+  background-color: hsl(210, 7%, 11%);
+}
+body.dark .slider-section .slider::before,
+body.dark .slider-section .slider::after {
+  background-image: linear-gradient(to var(--gr-direction, right), hsl(210, 7%, 11%) 0%, transparent 100%);
+}
+body.dark footer {
+  background-color: hsl(210, 7%, 11%);
+}
+body.dark nav a, body.dark .text__section p, body.dark footer p {
+  color: #e3e6fc;
+}
+body.dark .footer__content-item {
+  color: #e3e6fc;
+}
+body.dark .footer__content-item a {
+  color: #e3e6fc;
+}
+body.dark .footer__content-socials a {
+  color: hsl(219, 70%, 91%);
+}
+body.dark .hero__section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8));
+}
+body.dark div.bar {
+  background-color: #e3e6fc;
+}
+body.dark .burger::before, body.dark .burger::after {
+  background-color: #e3e6fc;
+}
+
+.logo-dark:not(footer .logo) {
+  margin-left: -9rem;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none !important;
+}
+
 @font-face {
   font-family: "Montserrat-italic";
   src: url("../assets/fonts/Montserrat/Montserrat-Italic.ttf");
@@ -634,7 +817,7 @@ footer {
 body {
   font-family: "Montserrat-regular", sans-serif;
   font-size: 1rem;
-  background-color: #fff;
+  background-color: #fefefe;
   color: rgba(0, 0, 0, 0.8);
 }
 
@@ -718,23 +901,59 @@ a:hover {
   text-align: center;
   margin: 0 auto 16px;
   padding: 12px 16px;
-  color: #fff;
+  color: #fefefe;
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
 .mobile-nav a:hover {
-  text-decoration: underline #fff;
+  text-decoration: underline #fefefe;
 }
 
-@media (width > 768px) {
+@media (width = 820px) {
+  .switch {
+    right: 5rem;
+  }
+}
+@media (width = 1024px) {
+  .switch {
+    right: 6rem;
+  }
+}
+@media (width > 912px) {
   .mobile-nav, .burger {
     display: none;
   }
 }
-@media (width <= 768px) {
+@media (width <= 912px) {
   .container nav {
     display: none;
+  }
+  header .logo {
+    margin-bottom: -1.2rem;
+  }
+}
+@media (width <= 540px) {
+  .switch {
+    font-size: 0.8rem;
+    right: 2.7rem;
+  }
+  .switch span {
+    width: 20px;
+    height: 20px;
+  }
+  .switch::after {
+    width: 20px;
+    height: 20px;
+  }
+}
+@media (width <= 280px) {
+  .burger {
+    width: 25px;
+  }
+  article.card {
+    width: 70%;
+    margin-left: 10%;
   }
 }
 section:not(.text__section):not(.hero__section-contact) {
@@ -774,7 +993,7 @@ footer .logo:hover {
   align-items: center;
   flex-direction: column;
   position: relative;
-  color: #fff;
+  color: #fefefe;
   background-size: cover;
   overflow: hidden;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
@@ -795,7 +1014,7 @@ footer .logo:hover {
   left: 0;
   width: 100%;
   height: 70px;
-  background: #fff;
+  background: #fefefe;
   transform-origin: 0 100%;
   transform: skewY(2deg);
   z-index: 1;
@@ -811,7 +1030,7 @@ footer .logo:hover {
   justify-content: center;
 }
 .scroll__down-container a {
-  color: #fff;
+  color: #fefefe;
   margin-top: -1rem;
   font-size: 1.2rem;
   animation: scale 1.5s infinite;
@@ -872,7 +1091,7 @@ footer .logo:hover {
   left: 0;
   width: 100%;
   height: 70px;
-  background: #fff;
+  background: #fefefe;
   transform-origin: 0 100%;
   transform: skewY(-2deg);
   z-index: 1;
@@ -892,7 +1111,7 @@ footer .logo:hover {
 }
 .card:hover {
   background: transparent;
-  color: #fff;
+  color: #fefefe;
   border: 1px solid #5b43b3;
 }
 .card img {
@@ -912,7 +1131,7 @@ footer .logo:hover {
   border: none;
   padding: 0.8rem;
   border-radius: 5px;
-  color: #fff;
+  color: #fefefe;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 3rem;
@@ -926,7 +1145,7 @@ footer .logo:hover {
   border: none;
   padding: 0.8rem;
   border-radius: 5px;
-  color: #fff;
+  color: #fefefe;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-bottom: 3rem;
@@ -945,7 +1164,7 @@ footer .logo:hover {
 
 footer {
   min-height: 30vh;
-  background: #fff;
+  background: #fefefe;
 }
 footer p {
   text-align: center;
