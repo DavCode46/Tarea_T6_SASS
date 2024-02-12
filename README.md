@@ -1,6 +1,6 @@
 # Proyecto realizado con HTML, CSS y JS
-## Tema 5 2º DAW
+## Tema 6 2º DAW
 
 **Autor:** David Menéndez Blanco
-***GitHub:*** https://github.com/DavCode46/Tarea_T5_DWEC-DIW
+***GitHub:*** https://github.com/DavCode46/Tarea_T6_SASS.git
 
