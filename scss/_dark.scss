@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 .switch-container {
     display: flex;
     justify-content: flex-end;
@@ -7,7 +9,7 @@
   
   .switch {
     all: initial;
-    background: $btn-bg;
+    background: v.$btn-bg;
     border-radius: 1000px;
     border: none;
     cursor: pointer;
@@ -19,7 +21,7 @@
     right: 3.5rem;
   
     &:hover {
-      background: $btn-hover;
+      background: v.$btn-hover;
     }
   }
 
@@ -30,7 +32,7 @@
       width: 25px;
       height: 25px;
       position: absolute;
-      background: $white-switch;
+      background: v.$white-switch;
       top: 0;
       left: 0;
       right: unset;
@@ -40,7 +42,7 @@
     }
   
     &.active {
-      background-color: $orange;;
+      background-color: v.$orange;;
       color: #000;
   
       &::after {
@@ -62,41 +64,41 @@
   }
 
   body.dark {
-    background-color: $background;
+    background-color: v.$background;
     .switch:hover {
-      background: $orange;
+      background: v.$orange;
     }
 
     .hero__section::before {
-      background-color: $background;
+      background-color: v.$background;
     }
 
     .about__section {
-      background-color: $background;
+      background-color: v.$background;
       color: #e3e6fc;
 
       .square__container::after {
-        background: linear-gradient(45deg, transparent, $surface-variant);
+        background: linear-gradient(45deg, transparent, v.$surface-variant);
       
       }
 
       .frame__container::after {
-        border-color: $surface-variant;
+        border-color: v.$surface-variant;
       }
     }
   
     .card__section {
       &::before {
-        background-color: $background;
+        background-color: v.$background;
       }
 
   
-      background-color: $background;
+      background-color: v.$background;
 
       .card {
-        background-color: $background;
-        border-color: $primary-dark;
-        color: $primary-dark;
+        background-color: v.$background;
+        border-color: v.$primary-dark;
+        color: v.$primary-dark;
 
         &:hover {
             background: transparent;
@@ -105,10 +107,10 @@
     }
 
     nav.mobile-nav{
-        background-color: $background;
+        background-color: v.$background;
 
         &.is-active {
-            background-color: $background;
+            background-color: v.$background;
         }
     }
 
@@ -118,40 +120,40 @@
     }
 
     .contact__section {
-        background-color: $background;
+        background-color: v.$background;
 
         .contact__section-card {
-            background-color: $background;
-            border-color: $primary-dark;
+            background-color: v.$background;
+            border-color: v.$primary-dark;
 
             &:hover {
-                color: $primary-dark;
+                color: v.$primary-dark;
             }
 
             a {
-                color: $primary-dark;
+                color: v.$primary-dark;
 
                 &:hover {
                     color: #fff;
-                    text-decoration: underline solid $primary-dark;
+                    text-decoration: underline solid v.$primary-dark;
                 }
             }
         }
 
         form {
-            box-shadow: $darkShadow;
+            box-shadow: v.$darkShadow;
         }
 
         input:not(input[type='submit']),
         textarea {
-            background-color: $surface-variant;
+            background-color: v.$surface-variant;
 
             &::placeholder {
-                color: $on-secondary-container;
+                color: v.$on-secondary-container;
             }
 
             &:focus {
-                box-shadow: $darkShadow;
+                box-shadow: v.$darkShadow;
             }
         }
 
@@ -159,47 +161,47 @@
 
         label,
         legend {
-            color: $on-secondary-container;
+            color: v.$on-secondary-container;
         }
 
     }
 
     .slider-section {
-        background-color: $background;
+        background-color: v.$background;
 
         .slider::before,
         .slider::after {
-            background-image: linear-gradient(to var(--gr-direction, right), $background 0%, transparent 100%);
+            background-image: linear-gradient(to var(--gr-direction, right), v.$background 0%, transparent 100%);
         }
     }
 
     header {
-      background-color: $header-footer;
+      background-color: v.$header-footer;
       margin-top: -5rem;
       padding-top: 5rem;
     }
   
     footer {
-      background-color: $header-footer;
+      background-color: v.$header-footer;
       height: 100vh;
       padding-top: 5rem;
       margin-bottom: -5rem;
     }
   
     nav a, .text__section p, footer p {
-      color: $primary-dark;
+      color: v.$primary-dark;
     }
   
     .footer__content-item {
-      color: $primary-dark;
+      color: v.$primary-dark;
   
       a {
-        color: $primary-dark;
+        color: v.$primary-dark;
       }
     }
   
     .footer__content-socials a {
-      color: $secondary-dark;
+      color: v.$secondary-dark;
     }
   
     .hero__section {
@@ -207,12 +209,12 @@
     }
   
     div.bar {
-      background-color: $primary-dark;
+      background-color: v.$primary-dark;
     }
   
     .burger {
       &::before, &::after {
-        background-color: $primary-dark;
+        background-color: v.$primary-dark;
       }
     }
   }

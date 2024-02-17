@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 img:not(.card__image-container > img), .btn-icon, ion-icon {
   display: block;
 }
@@ -34,7 +36,7 @@ body {
 }
 
 body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
-  background-color: $background;
+  background-color: v.$background;
 }
 
 .slider-section {
@@ -93,8 +95,8 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
 }
 
 .slider-card {
-  background-color: $surface-variant;
-  border-radius: $radius-12;
+  background-color: v.$surface-variant;
+  border-radius: v.$radius-12;
   overflow: hidden;
 }
 
@@ -111,12 +113,12 @@ body:is(:hover, :focus-visible)::-webkit-scrollbar-thumb {
 .btn-icon {
   width: 40px;
   height: 40px;
-  background-color: $secondary-container;
-  color: $on-secondary-container;
+  background-color: v.$secondary-container;
+  color: v.$on-secondary-container;
   font-size: 2.4rem;
   display: grid;
   place-items: center;
-  border-radius: $radius-full;
+  border-radius: v.$radius-full;
   box-shadow: 0 1px 2px hsla(0, 0%, 0%, 0.5);
 }
 

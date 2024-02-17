@@ -1,3 +1,5 @@
+@use "variables" as v;
+
 @font-face {
   font-family: 'Playfair-semibold';
   src: url('../assets/fonts/Playfair/PlayfairDisplay-SemiBoldItalic.ttf');
@@ -80,17 +82,17 @@ form {
     .form-btn {
       border: none;
       padding: .8rem;
-      background: $btn-bg;
+      background: v.$btn-bg;
       border-radius: 8px;
-      color: $white;
+      color: v.$white;
       width: 30%;
       margin-left: 2.8rem;
       cursor: pointer;
-      transition: $transition;
+      transition: v.$transition;
       margin-bottom: 3rem;
 
       &:hover {
-        background: $btn-hover;
+        background: v.$btn-hover;
       }
     }
   }
@@ -104,9 +106,9 @@ form {
 
 .success__message-container {
   display: none;
-  border: 1px solid $btn-bg;
+  border: 1px solid v.$btn-bg;
   border-radius: 5px;
-  background: $white;
+  background: v.$white;
   width: fit-content;
   padding: 2rem;
   margin: 0 auto;
@@ -155,20 +157,20 @@ form {
   margin: 2rem;
 
   article {
-    border: 1px solid $btn-bg;
-    background: $btn-bg;
+    border: 1px solid v.$btn-bg;
+    background: v.$btn-bg;
     text-align: center;
     vertical-align: middle;
     min-width: 15rem;
     min-height: 10rem;
     border-radius: 10px;
-    color: $white;
-    transition: $transition;
+    color: v.$white;
+    transition: v.$transition;
     line-height: 1.75;
 
     &:hover {
       background: transparent;
-      color: $light-black;
+      color: v.$light-black;
       filter: none;
     }
   }
@@ -180,13 +182,13 @@ form {
 
   article {
     &:hover a {
-      color: $light-black;
+      color: v.$light-black;
     }
 
     a {
       text-decoration: none;
-      color: $white;
-      transition: $transition;
+      color: v.$white;
+      transition: v.$transition;
       font-size: .8rem;
     }
 
@@ -201,8 +203,8 @@ form {
     }
 
     a:hover {
-      color: $btn-bg;
-      text-decoration: underline $btn-bg;
+      color: v.$btn-bg;
+      text-decoration: underline v.$btn-bg;
     }
   }
 }
@@ -214,7 +216,7 @@ form {
 
   h1 {
     position: absolute;
-    color: $white;
+    color: v.$white;
     font-size: 2rem;
     top: 50%;
     left: calc(50% - 128.01px);
